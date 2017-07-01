@@ -1,0 +1,75 @@
+/*Background: #F2F1E8
+Text: #131511
+Inline Link: #968772
+Inline Link (Hover): #967343
+Navigation Background: #FFFFFF
+Navigation Text: #2B2F26
+Navigation Text (Hover): #CD5D67
+Navigation Text (Active) #968772
+Button Background: #968772
+Button Background (Hover): #967343
+Button Text: #F2F1E8
+Button Text (Hover): #FFFFFF
+Input Border Bottom: #968772
+Input Border Bottom (Focus): #967343*/
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+/*======= ABOUT =======*/
+
+/*======= INDEX =======*/
+
+/*===== NEWSLETTER ====*/
+
+
+body {
+  /*width: 1000px;
+  height: 800px;*/
+  margin: auto;
+  max-width: 1000px;
+  background-color: black;
+  font-family: sans-serif;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  /*justify-content: center;*/
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: white;
+  margin: 0 0;
+  padding: 2% 0;
+}
+
+nav li {
+  display: inline;
+  width: 100%;
+  padding: 3% 4%;
+  margin: 0 2%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-image: url("background-2.jpg");
+}
+
+.container {
+  background-color: white;
+  height: 20%;
+  width: 30%;
+  padding: 10%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 92%
+}
