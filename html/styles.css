@@ -18,13 +18,16 @@ Input Border Bottom (Focus): #967343*/
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;*/
 
-body{
+body {
   margin: auto;
   background-color: #F2F1E8;
   font-family: serif;
   line-height: 180%;
-
 }
+
+/*logo {
+margin-right: auto;
+}*/
 
 nav {
   list-style-type: none;
@@ -32,6 +35,8 @@ nav {
   background-color: white;
   margin: 0 0;
   padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -43,16 +48,18 @@ nav a {
   color: #2B2F26;
 }
 
-nav li:hover {
+nav li: hover {
   color: #cd5d67;
 }
 
-nav li:active {
+nav li: active {
   color: #968772;
 }
 
+
 /*======= ABOUT =======*/
-.aboutpage {
+
+.wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +72,6 @@ nav li:active {
 }
 
 #abouttopofpage {
-  font-size: 50px;
   margin: 5% 0;
 }
 
@@ -81,7 +87,7 @@ blockquote {
   margin-left: 0;
 }
 
-#history header{
+header {
   font-size: 32px;
   font-weight: lighter;
   margin-top: 2%;
@@ -99,7 +105,60 @@ blockquote {
   font-size: 48px;
   margin: 3% 0;
 }
+
+#bottomcontainer {
+width: 700px;
+}
+
+#facilities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#facilities p {
+  width: 500px;
+}
+
+aside {
+  width: 200px;
+  font-size: 10px;
+  line-height: normal;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside div {
+  background-image: url("background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 20vh;
+
+}
+
+#monthlyplans {
+  width: auto;
+  margin: 3% 0;
+}
+
+table {
+  width: 700px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  justify-content: center;
+}
+
+th, td {
+  padding: 2% 4%;
+}
+
+
 /*======= INDEX =======*/
+
 
 /*===== NEWSLETTER ====*/
 
@@ -110,7 +169,6 @@ blockquote {
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
 
 #newslettercontainer {
