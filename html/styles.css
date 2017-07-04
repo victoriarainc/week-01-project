@@ -25,27 +25,36 @@ body {
   line-height: 180%;
 }
 
-/*logo {
-margin-right: auto;
-}*/
-
 nav {
   list-style-type: none;
   text-align: center;
   background-color: white;
   margin: 0 0;
-  padding: 2% 0;
+  padding: 0 0;
   display: flex;
-  justify-content: space-between;
+  /*flex-direction: row;*/
+  justify-content: center;
+  width: 100%;
+}
+
+#logo {
+  background-image: url("bent-creek-logo.png");
+  width: 50px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-self: center;
+  justify-content: flex-start;
 }
 
 nav a {
-  display: inline;
-  width: 100%;
-  padding: 3% 4%;
-  text-align: center;
+  /*display: flex;*/
+  /*width: 50%;*/
+  padding: 2% 0;
+  /*text-align: center;*/
   text-decoration: underline;
   color: #2B2F26;
+  /*align-content: center;*/
 }
 
 nav li: hover {
@@ -55,7 +64,6 @@ nav li: hover {
 nav li: active {
   color: #968772;
 }
-
 
 /*======= ABOUT =======*/
 
@@ -159,7 +167,53 @@ th, td {
 
 /*======= INDEX =======*/
 
+.indexrow {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 500px;
+}
 
+.indexrow div {
+  width: 33%;
+}
+
+#title {
+  width: 100%;
+
+}
+
+#note {
+  /*background-image: url("product-2.jpg");*/
+}
+
+#endlesspossibilities {
+  /*background-image: url("product-3.jpg");*/
+}
+
+#sets {
+  /*background-image: url("product-4.jpg");*/
+}
+
+#textures {
+  /*background-image: url("product-5.jpg");*/
+}
+
+#teatime {
+  /*background-image: url("product-6.jpg");*/
+}
+
+#jarsandcontainers {
+  /*background-image: url("product-7.jpg");*/
+}
+
+#wasabiandsaki {
+  /*background-image: url("product-1.jpg");*/
+}
+
+#sippinonsunshine {
+  /*background-image: url("birdhouse.jpg");*/
+}
 /*===== NEWSLETTER ====*/
 
 #newsletterwrapper {
