@@ -115,7 +115,7 @@ header {
 }
 
 #bottomcontainer {
-width: 700px;
+width: 100%;
 }
 
 #facilities {
@@ -125,15 +125,16 @@ width: 700px;
 }
 
 #facilities p {
-  width: 500px;
+  width: 50%;
 }
 
 aside {
-  width: 200px;
+  width: 30%;
   font-size: 10px;
   line-height: normal;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 aside div {
@@ -141,7 +142,7 @@ aside div {
   background-repeat: no-repeat;
   background-size: contain;
   width: 200px;
-  height: 20vh;
+  height: 100%;
 
 }
 
@@ -168,14 +169,39 @@ th, td {
 /*======= INDEX =======*/
 
 .indexrow {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  height: 500px;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-flow: row wrap;*/
+  /*width: 100%;
+  height: auto;*/
 }
 
-.indexrow div {
-  width: 33%;
+.indexrow div.row_1, .row_2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  /*height: 50vh;
+  width:auto;*/
+}
+
+.indexrow div.row_1 {
+  height: 200px;
+}
+.indexrow div.row_2 {
+  height: 100px;
+}
+
+.indexrow div.row_1 div {
+  width: 33.3%;
+}
+
+.indexrow div img {
+  width: 100%;
+  height: auto;
+}
+
+.indexrow div p {
+
 }
 
 #title {
@@ -232,7 +258,7 @@ th, td {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  align-self: flex-start;
+  align-self: center;
   justify-content: center;
   margin: 18%;
   padding: 5% 3%;
