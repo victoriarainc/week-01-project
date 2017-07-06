@@ -32,9 +32,14 @@ nav {
   margin: 0 0;
   padding: 0 0;
   display: flex;
-  /*flex-direction: row;*/
+  align-items: center;
   justify-content: center;
+  justify-content: space-between;
   width: 100%;
+  z-index: 2;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;*/
+
 }
 
 #logo {
@@ -43,36 +48,37 @@ nav {
   height: 40px;
   background-repeat: no-repeat;
   background-size: contain;
-  align-self: center;
-  justify-content: flex-start;
+  margin-left: 4%;
+  margin-right: 17%;
+
 }
 
 nav a {
-  /*display: flex;*/
-  /*width: 50%;*/
   padding: 2% 0;
-  /*text-align: center;*/
   text-decoration: underline;
   color: #2B2F26;
-  /*align-content: center;*/
+  margin-right: auto;
 }
 
-nav li: hover {
+nav a:hover {
   color: #cd5d67;
 }
 
-nav li: active {
+nav a:active {
   color: #968772;
 }
 
 footer {
   background-color: #131511;
-  color: white;
+  color: #F2F1E8;
   padding: 30px 10px;
+  width: 100%
 }
 
-
+/*=========================*/
 /*======= ABOUT =======*/
+/*============================*/
+
 
 .wrapper {
   display: flex;
@@ -88,6 +94,7 @@ footer {
 
 #abouttopofpage {
   margin: 5% 0;
+  margin-top: 10%;
 }
 
 #aboutstory {
@@ -105,15 +112,16 @@ blockquote {
 header {
   font-size: 32px;
   font-weight: lighter;
-  margin-top: 2%;
 }
 
 .overlay {
   background-image: url("background-3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
+  height: 100%;
   width: 100%;
   color: white;
   padding: 15% 22%;
@@ -123,6 +131,10 @@ header {
 
 #bottomcontainer {
   width: 100%;
+}
+
+#headerfacilities {
+  margin-top: 3%;
 }
 
 #facilities {
@@ -142,18 +154,31 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-left: 5%;
 }
 
-aside div {
+.aboutaside {
   background-image: url("background-1.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 200px;
-  height: 100%;
+  height: 40vh;
+  margin-bottom: 0;
+  position: relative;
 }
+
+.aboutspan {
+  position: absolute;
+  bottom: 90px;
+}
+
 
 #monthlyplans {
   width: auto;
+  margin: 3% 0;
+}
+
+#monthlyplans header {
   margin: 3% 0;
 }
 
@@ -171,8 +196,10 @@ th, td {
   padding: 2% 4%;
 }
 
-
+/*=========================*/
 /*======= INDEX =======*/
+/*===========================*/
+
 
 #title {
   width: 100%;
@@ -184,11 +211,11 @@ th, td {
 .indextitle {
   font-size: 60px;
   font-weight: normal;
-  margin: 25px 0 10px 0;
+  margin: 14% 0 3% 0;
 }
 
 .indexp {
-  margin: 15px 0 25px 0;
+  margin: 15px 0 50px 0;
   font-weight: lighter;
 }
 
@@ -268,11 +295,13 @@ th, td {
   background-image: url("product-7.jpg");
 }
 
-
+/*==========================*/
 /*===== NEWSLETTER ====*/
+/*=============================*/
 
 #newsletterwrapper {
   background-image: url("background-2.jpg");
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   display: flex;
@@ -290,6 +319,7 @@ th, td {
   align-self: center;
   justify-content: center;
   margin: 18%;
+  margin-bottom: 8.5%;
   padding: 5% 3%;
   font-family: 'Merriweather', serif;
 }
@@ -319,7 +349,7 @@ input {
   font-size: 20px;
 }
 
-.submitbutton {
+#signupButton {
   display: flex;
   justify-content: center;
   align-self: center;
@@ -333,7 +363,7 @@ input {
   font-weight: lighter;
 }
 
-.submitbutton:hover {
+#signupButton:hover {
   background-color: #967343;
   color: #FFFFFF;
 }
